@@ -1,0 +1,281 @@
+/*reset*/
+*{margin:0px; padding:0px;}
+
+ul{list-style:none;}
+
+a{color:#f3f0ee; text-decoration: none;}
+
+h2{color:#f3f0ee;}
+
+h3{color:#f3f0ee;}
+
+p{color:#f3f0ee;}
+
+body{background-color: #0e1316; }
+
+
+
+
+
+/*-------------모바일버전---------*/
+@media(max-width:760px){
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+/*-----------테블릿버전---------*/
+@media(min-width:760px) and (max-width:1200px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*--------------pc버전---------*/
+@media(min-width:1200px){
+
+.progress {width:100vw; height: 100vh; background: #0e1316;; color: #fff; position: fixed; top: 0; left: 0; z-index: 1000; }
+
+.progress_bar {border-top: 2px solid #fff;	position: absolute;	top: 50%; width: 0%;}
+
+.progress_text {font-size: 28px; margin-top: 1%; position: absolute; text-align: center; top: 50%; width: 100%;}
+
+.progress.on{top:-200%; transition: 0.5s; transition-delay: 2.5s;}
+
+
+/* .progress_bar.on1{transition-delay: 3; border-top-color: #fff;} */
+
+/* .progress_complete .progress-bar {border-top-color: #fff;} */
+
+
+
+
+
+
+
+
+
+/*header*/
+header{width:100%; height:90px; display: flex; justify-content: space-between; align-items: center; padding:10px 30px 10px 15px; box-sizing:border-box; position: fixed; z-index: 99;}
+
+header ul{display:flex; gap:45px;}
+
+header a{font-size:1.2rem;}
+
+
+
+
+/*--------container---------*/
+#container{width:100%; overflow: hidden;}
+
+#container .home{width:100%; height:100vh;}
+
+#container .home_txt{position:absolute; left:5vw; bottom:20vh; color:#f3f0ee;  z-index: 6; font-family: "Work Sans", sans-serif;}
+
+#container .home h2:nth-child(1){font-size:8.5rem;}
+
+#container .home h2:nth-child(2){font-size:10.5rem; margin:-1vh;}
+
+
+
+/*----------이미지----------*/
+
+/*--------grow_img1--------*/
+.grow_img1{position:absolute; left:40vw; top:40vh; transform: translate(-50%, -50%);}
+
+.grow_img1 div{position:absolute; transform: translate(-50%, -50%); overflow: hidden;}
+
+.grow_img1 div:nth-child(1){width:380px; height:420px; left:0px; top:0px; z-index: 5;}
+
+.grow_img1 div:nth-child(2){width:300px; height:360px; left:250px; top:250px;  z-index: 4;}
+
+.grow_img1 div:nth-child(3){width:200px; height:280px; left:450px; top:130px;  z-index: 3;}
+
+.grow_img1 div:nth-child(4){width:160px; height:200px; left:320px; top:-150px;  z-index: 3;}
+
+.grow_img1 img{width:100%; height:100%;}
+
+.grow_img1 img.on{transform: scale(1.2); transition: 2.3s;}
+
+
+
+
+/*--------grow_img2--------*/
+.grow_img2{position:absolute; left:62vw; top:25vh; transform: translate(-50%, -50%); }
+
+.grow_img2 div{position:absolute; transform: translate(-50%, -50%); overflow: hidden;}
+
+.grow_img2 div:nth-child(1){width:0px; height:0px; left:100px; top:150px; z-index: 5;}
+
+.grow_img2 div:nth-child(2){width:0px; height:0px; left:0px; top:0px;  z-index: 3;}
+
+.grow_img2 div:nth-child(3){width:0px; height:0px; left:170px; top:60px;  z-index: 4;}
+
+.grow_img2 img{width:100%; height:100%;}
+
+.grow_img2 img.on{transform: scale(1.2); transition: 2.3s;}
+
+
+
+
+/*--------grow_img3--------*/
+.grow_img3{position:absolute; left:20vw; top:25vh; transform: translate(-50%, -50%); }
+
+.grow_img3 div{position:absolute; transform: translate(-50%, -50%); overflow: hidden;}
+
+.grow_img3 div:nth-child(1){width:0px; height:0px; left:80px; top:130px; z-index: 5;}
+
+.grow_img3 div:nth-child(2){width:0px; height:0px; left:0px; top:0px;  z-index: 3;}
+
+.grow_img3 div:nth-child(3){width:0px; height:0px; left:170px; top:40px;  z-index: 4;}
+
+.grow_img3 img{width:100%; height:100%;}
+
+.grow_img3 img.on{transform: scale(1.2); transition: 2.3s;}
+
+
+
+
+/*--------grow_img4--------*/
+.grow_img4{position:absolute; left:96vw; bottom:35vh; transform: translate(-50%, -50%);}
+
+.grow_img4 div{position:absolute; transform: translate(-50%, -50%); overflow: hidden;}
+
+.grow_img4 div:nth-child(1){width:0px; height:0px; left:-70px; top:130px; z-index: 5;}
+
+.grow_img4 div:nth-child(2){width:0px; height:0px; left:-170px; top:0px;  z-index: 3;}
+
+.grow_img4 img{width:100%; height:100%;}
+
+.grow_img4 img.on{transform: scale(1.2); transition: 2.3s;}
+
+
+
+
+/*------------about부분------------*/
+
+.about{width:100%; height:100vh;   box-sizing: border-box; display: flex; align-items: center;} 
+
+.about_wrap{width:1190px; height: 720px; margin: auto; opacity: 0; transition: 1.8s;}
+
+.about_wrap.show{opacity: 1;}
+
+
+/*-----about이미지부분----*/
+.about h2{font-size:3.5rem; margin-left:20px;}
+
+.about_wrap_direct{display:flex; gap:40px;} 
+
+
+.about_img{width:45%; transform: translateX(-100px); opacity: 0; transition:1.8s;}
+
+.about_img.show{opacity: 1; transform: translateX(0px);}
+
+.about_img div{width:500px; height:550px; background-color:#616669; margin:40px 0px 0px 20px ;}
+
+
+
+
+/*-------about정보부분-------*/
+.about_information{width:55%; display:flex; flex-wrap:wrap; transform: translateX(100px); opacity: 0; transition: 1.8s;}
+
+.about_information.show{opacity: 1; transform: translateX(0px);}
+
+/* .about_information > div{width:calc(100% / 2); } */
+
+.about_information h3{margin:50px 0px 20px;  font-size:2.3rem;}
+
+.about_profile{width:45%;}
+
+.about_profile p{line-height: 35px;}
+
+
+.about_education{width:55%;}
+
+.about_education > div{display:flex; margin:10px 0px;}
+
+.about_year{width:60px; height:25px; line-height: 25px; text-align: center; border:1px solid #616669; color:#f3f0ee;border-radius:20px; margin-right:5px;}
+
+
+
+.about_license{width:45%;}
+
+.about_license p{line-height:35px;}
+
+
+.about_skill{width:55%;}
+
+.about_skill ul{width:100%;  display:flex; gap:15px; flex-wrap: wrap;}
+
+.about_skill li{text-align: center;}
+
+.about_skill li span{height:30px; line-height:30px; color:#f3f0ee; border:1px solid #f3f0ee; padding:0px 20px; border-radius:20px; display: inline-block;}
+
+
+
+/*---------work벨트부분----------*/
+.work_belt_wrap{width:200%; margin:100px 0px;}
+
+.work_belt1{width:200%;}
+
+.work_belt1 span{font-size:13rem; font-weight: 650; color:#f3f0ee; font-family: "Golos Text", sans-serif; }
+
+.work_belt2{width:200%;}
+
+.work_belt2 span{font-size:13rem; font-weight: 650; color:transparent; -webkit-text-stroke: 2px #616669; font-family: "Golos Text", sans-serif; }
+
+.work_belt_line{margin:0px 40px;}
+
+
+
+
+
+/*----------work부분-------*/
+.work{width:100%; height:100vh; align-items: center; display: flex;}
+
+.work ul{width:100%; display:flex;}
+
+.work li{width:calc(100% / 2); height:800px;}
+
+.work_txtwrap{background-color:#616669;}
+
+.work_txtwrap h2{font-size:7rem; letter-spacing:4px;}
+
+/* .work_txtwrap p   */
+
+
+
+}
