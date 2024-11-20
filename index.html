@@ -8,8 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Dongle&family=Gabriela&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Dongle&family=Gabriela&family=Golos+Text:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap" rel="stylesheet">
     <script src="js/jquery-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/portfolio.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 </head>
 <body>
     <div class="progress" id ="progress">
@@ -152,17 +154,20 @@
             </div>
         </div>
         <section class="work">
+            <div class="circle_txt">
+                <img src="img/원모양텍스트.png">
+            </div>
             <ul>
                 <li class="work_txtwrap">
                     <h2>
                         Website<br>
-                        two
+                        <span>two</span>
                     </h2>
-                    <div class="">
-                        <p>작업기간 3일</p>
-                        <p>기여도:100%</p>
+                    <div class="work_explan">
+                        <p>작업기간: 3일</p>
+                        <p>기여도: 100%</p>
                         <p>클론코딩 사이트입니다</p>
-                        <div>
+                        <div class="work_box">
                             <div><a href="#">VIEW</a></div>
                             <div><a href="#">GIT</a></div>
                         </div>
@@ -170,11 +175,121 @@
                 </li>
                 <li class="work_mok">
                     <div>
-                        <img src="">
+                        <img src="img/mokup1.png">
                     </div>
                 </li>
             </ul>
         </section>
+        <div class="illust_belt_wrap">
+            <div class="illust_belt1">
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+            </div>
+            <div class="illust_belt2">
+                <span>DESIGN</span>
+                <span class="illust_belt_line">-</span>
+                <span>DESIGN</span>
+                <span class="illust_belt_line">-</span>
+                <span>DESIGN</span>
+                <span class="illust_belt_line">-</span>
+                <span>DESIGN</span>
+                <span class="illust_belt_line">-</span>
+            </div>
+            <div class="illust_belt1">
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+                <span>ILLUST</span>
+                <span class="illust_belt_line">-</span>
+            </div>
+        </div>
+        <section id="illust">
+            <div class="illust_wrap">
+                <span>ILLUST</span>
+                <ul>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="imgBox">
+                            <img src="https://img.freepik.com/premium-photo/red-shiba-inu-puppy-dog-standing-outdoor_357532-87.jpg?uid=R171035218&ga=GA1.1.742663362.1727235820&semt=ais_hybrid">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact">
+           <!-- <span>PORTFOLIO</span>
+           <span>2024</span>
+           <div>
+            <span>Doo min</span>
+            <span>enals99@naver.com</span>
+           </div>
+           <div>
+                <a href="#">BLOG</a>
+                <a href="#">GIT HUB</a>
+           </div>
+           <span>CONTACT</span> -->
+           
+           <div class="contact_txt1">
+                <span>Thank You!</span>
+           </div>
+           <ul>
+                <li>
+                    <p>Doo Min</p>
+                    <p>enals99@naver.com</p>
+                </li>
+                <li>
+                    <p>PORTFOLIO 2024</p>
+                </li>
+                <li>
+                    <p><a href="#">BLOG</a></p>
+                    <p><a href="#">GIT HUB</a></p>
+                </li>
+           </ul>
+        </section>
     </div>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        //work 박스 효과
+        let box = document.querySelectorAll(".work_box div")
+        console.log(box)
+        box.addEventListener("click", function(){
+            box.classList.add("on")
+        })
+      
+       
+    </script>
 </body>
 </html>
