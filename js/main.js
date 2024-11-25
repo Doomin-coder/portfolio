@@ -8,7 +8,12 @@ $(function(){
         $("html, body").stop().animate({scrollTop:target})
     })
 
-
+    $(".back_menu li").on("click", function(){
+        let i = $(this).index();
+        let target = $("#container section").eq(i).offset().top;
+        $("html, body").stop().animate({scrollTop:target})
+        $(".back_menu").stop().toggleClass("on")
+    })
 
 
 
@@ -36,8 +41,14 @@ $(function(){
             
      },12.5)
 
-   
-    
+     /*-----*/
+     $(".menu_button").on("click", function(){
+        $(".back_menu").stop().toggleClass("on")
+        $("header h1").stop().toggleClass("on")
+     })
+
+     
+
 
 
 /*---------container-------*/    
@@ -272,3 +283,19 @@ setInterval(function(){
 
 
 })
+
+
+//  /*------------메뉴버튼--------*/
+//  let bar1 = document.querySelector(".menu_button span");
+//  let bar2 = document.querySelector(".menu_button span");
+// if (bar2) {
+//     const beforeStyles = getComputedStyle(bar2, "::before");
+//     console.log(beforeStyles.content); // 가상 요소의 content 값 출력
+// }
+
+
+
+//  bar1.addEventListener("click",function(){
+//     beforeStyles.addClass("on")
+//  })
+   
