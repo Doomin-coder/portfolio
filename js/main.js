@@ -251,7 +251,12 @@ setInterval(function(){
         }
 
         
-
+         //자바스크립트페이지 효과
+         if(wScroll >= $(".javascript_Inner .item").offset().top - $(window).height() / 1.2) {
+            $(".javascript_Inner .item").addClass("on")
+        } else {
+            $(".javascript_Inner .item").removeClass("on")
+        }
 
 
     })
