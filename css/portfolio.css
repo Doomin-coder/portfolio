@@ -227,7 +227,7 @@ header .front_menu{display:none;}
 
 .about_wrap{width:100%; height: 100%; margin: auto; opacity: 0; transition: 1.8s;}
 
-.about_wrap h2{font-size:7vw; text-align: center; margin-bottom: 30px;}
+.about_wrap h2{font-size:45px; text-align: center; margin-bottom: 30px;}
 
 .about_wrap.show{opacity: 1;}
 
@@ -238,9 +238,9 @@ header .front_menu{display:none;}
 
 .about_img.show{opacity: 1; transform: translateX(0px);}
 
-.about_img div{width:50vw; height:50vw; background-color:#616669; margin: auto;}
+.about_img div{width:100%; height:420px; max-width: 370px;  margin: auto;}
 
-
+.about_img img{width:100%; height: 100%; object-fit: cover;}
 
 
 
@@ -251,7 +251,7 @@ header .front_menu{display:none;}
 
 /* .about_information > div{width:calc(100% / 2); } */
 
-.about_information h3{margin:50px 0px 20px;  font-size:2.3rem;}
+.about_information h3{margin:50px 0px 20px;  font-size:34px;}
 
 .about_profile{width:100%; text-align: center;}
 
@@ -584,20 +584,20 @@ header a{font-size:1.2rem;}
 /*-----about이미지부분----*/
 .about h2{font-size:5vw; margin-left:20px;}
 
-.about_wrap_direct{display:flex; gap:20px;} 
+.about_wrap_direct{display:flex; gap:40px; margin-top:20px;} 
 
 
-.about_img{width:45vw;  transform: translateX(-100px); opacity: 0; transition:1.8s;}
+.about_img{width:calc(30% - 20px);  transform: translateX(-100px); opacity: 0; transition:1.8s;}
 
 .about_img.show{opacity: 1; transform: translateX(0px);}
 
-.about_img div{width:100%; height:45vw; background-color:#616669; }
+.about_img div{width:100%; height:45vw;  }
 
-
+.about_img img{width:100%;}
 
 
 /*-------about정보부분-------*/
-.about_information{width:55vw; display:flex;  flex-wrap:wrap; transform: translateX(100px); opacity: 0; transition: 1.8s;}
+.about_information{width:calc(70% - 20px); display:flex;  flex-wrap:wrap; transform: translateX(100px); opacity: 0; transition: 1.8s;}
 
 .about_information.show{opacity: 1; transform: translateX(0px);}
 
@@ -618,7 +618,7 @@ header a{font-size:1.2rem;}
 
 .about_year{width:5.5vw; height:2.3vw; line-height: 2.3vw; font-size: 1.3vw; text-align: center; border:1px solid #616669; color:#f3f0ee;border-radius:20px;}
 
-.about_education p{width:220px;}
+.about_education p{ width:100%; }
 
 
 .about_license{width:45%;}
@@ -957,20 +957,20 @@ header .menu_button{display:none;}
 /*-----about이미지부분----*/
 .about h2{font-size:3.5rem; margin-left:20px;}
 
-.about_wrap_direct{display:flex; gap:40px;} 
+.about_wrap_direct{display:flex; gap:40px; margin-top:20px;} 
 
 
-.about_img{width:45%; transform: translateX(-100px); opacity: 0; transition:1.8s;}
+.about_img{width:calc(30% - 20px); transform: translateX(-100px); opacity: 0; transition:1.8s; display: flex; }
 
 .about_img.show{opacity: 1; transform: translateX(0px);}
 
-.about_img div{width:500px; height:550px; background-color:#616669; margin:40px 0px 0px 20px ;}
+.about_img div{width:300px; margin:auto;}
 
-
+.about_img div img{width:100%; object-fit: cover;}
 
 
 /*-------about정보부분-------*/
-.about_information{width:55%; display:flex; flex-wrap:wrap; transform: translateX(100px); opacity: 0; transition: 1.8s;}
+.about_information{width:calc(70% - 20px); display:flex; flex-wrap:wrap; transform: translateX(100px); opacity: 0; transition: 1.8s;}
 
 .about_information.show{opacity: 1; transform: translateX(0px);}
 
@@ -985,10 +985,11 @@ header .menu_button{display:none;}
 
 .about_education{width:55%;}
 
-.about_education > div{display:flex; margin:10px 0px;}
+.about_education > div{display:flex; margin:10px 0px; align-items: center;}
 
-.about_year{height:30px; line-height: 30px; text-align: center; border:1px solid #616669; color:#f3f0ee;border-radius:20px; margin-right:5px; padding:0px 15px;}
+.about_year{height:28px; line-height: 28px; text-align: center; border:1px solid #616669; color:#f3f0ee;border-radius:20px; margin-right:10px; padding:0px 16px;}
 
+.about_education p{font-size: 15.5px;}
 
 
 .about_license{width:45%;}
@@ -1074,7 +1075,7 @@ header .menu_button{display:none;}
 
 .work_explan div{font-size: 1.2rem; color:whitesmoke;}
 
-.work_explan p{max-width: 390px; font-size:1.05rem; color:whitesmoke; margin-top: 20px;}
+.work_explan p{max-width: 390px; font-size:1.02rem; color:whitesmoke; margin-top: 20px;}
 
 .work_box{display:flex; gap:15px; margin-top:30px;}
 
@@ -1166,7 +1167,7 @@ header .menu_button{display:none;}
 /*----------------콘텍트-------------*/
 #contact{width:100%; height:100vh; position:relative; color:#f3f0ee;}
 
-.contact_txt1{width:100%; font-size: 13rem; font-weight:700; text-align: center; padding-top: 100px;}
+.contact_txt1{width:100%; font-size: 12rem; font-weight:700; text-align: center; padding-top: 260px;}
 
 #contact ul{width:100%; display: flex; position: absolute; bottom: 0px; justify-content: space-between; padding:0px 30px 10px; box-sizing: border-box;}
 
